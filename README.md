@@ -56,10 +56,10 @@ and competitive models includes cost of ownership, miles driven, computed cost p
 Below is a column layout of the data required:
 	Model	Manufacturer	Cost	Miles Driven	CPM
 	
-	*	Null hypothesis: The Mechacar’s mean costs of ownership per mile driven is not significantly different of the 
-		population mean of the cost of ownership per mile of competitive models of other manufacturers. 
-	*	Alternative Hypothesis: The Mechacar’s costs of ownership per mile driven is significantly different of the 
-		population mean of the cost of ownership per mile of competitive models of other manufacturers. 
+*	Null hypothesis: The Mechacar’s mean costs of ownership per mile driven is not significantly different 
+	of the  population mean of the cost of ownership per mile of competitive models of other manufacturers. 
+*	Alternative Hypothesis: The Mechacar’s costs of ownership per mile driven is significantly different of 
+	the population mean of the cost of ownership per mile of competitive models of other manufacturers. 
 
 The study would use the one sample t-test to determine if the Mechacar mean cost of ownership per mile is significantly 
 different of the population mean of the cost of ownership per mile of competitive models of other manufacturers. 
