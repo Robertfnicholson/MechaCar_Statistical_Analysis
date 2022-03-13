@@ -46,5 +46,34 @@ lot_summary <- Sus_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(
 
 # View the dataframe
 head(lot_summary)
-                                        
+
+# Deliverable 3 - T-Tests on Suspension Coils
+# Write an RScript using the t.test() function to determine if the PSI across all manufacturing 
+# lots is statistically different from the population mean of 1,500 pounds per square inch.
+# Use a one-sample t-test
+
+# Perform a one-sample t-test for all lots
+t.test((Sus_Coil$PSI),mu=(1500))
+
+# p-value = 0.06028, slightly above the 0.05 so therefore, we do not have sufficient evidence to 
+# reject the null hypothesis, and so the two means are statistically similar.
+
+# Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function 
+# and its subset() argument to determine if the PSI for each manufacturing lot is statistically 
+# different from the population mean of 1,500 pounds per square inch.
+# Referenced code from Casey Chen(caseychen3605) "MechaCarChallenge.R" file on GitHub for 
+# correct syntax.
+
+# Lot 1
+t.test(subset(Sus_Coil,Manufacturing_Lot =="Lot1")$PSI,mu = 1500)
+#p-value = 1
+
+# Lot 2
+t.test(subset(Sus_Coil,Manufacturing_Lot =="Lot2")$PSI,mu = 1500)
+#p-value = 0.6072
+
+# Lot 3
+t.test(subset(Sus_Coil,Manufacturing_Lot =="Lot3")$PSI,mu = 1500)
+#p-value = 0.04168
+
                                             
